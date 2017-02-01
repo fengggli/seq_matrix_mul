@@ -1,0 +1,14 @@
+csci 590 HPC Lab 1
+Seq matrix multiplication
+
+Verify results using libsci(is a vender-optimized implementation of blas)
+
+    man intro_blas3
+    man DGEMM
+    man intro_cblas
+Evaluate matrix multiplication use PAPI
+
+create results dir
+
+
+
