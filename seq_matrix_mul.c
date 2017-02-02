@@ -219,7 +219,7 @@ int main(int argc, char * argv[]){
     long long count_l1_a[6] = {0};
     long long count_l1_m[6] = {0};
 
-    int Events[NUM_EVENTS]={PAPI_L1_DCA, PAPI_L1_DCM};
+    int Events[NUM_EVENTS]={PAPI_L1_DCA, PAPI_L1_DCM,PAPI_TLB_DM};
     int EventSet = PAPI_NULL;
     long long values[NUM_EVENTS];
 
@@ -320,7 +320,7 @@ int main(int argc, char * argv[]){
             if(verify(C, C_blas, N) == 0){
 
 //#ifdef VERBOSE
-                printf("\t\tElapsed Time: %16.9f second, %ld miss in %ld acess, mr=%lf\t", etime - btime, values[1],values[0], (values[1]+0.0)/values[0]);
+                printf("\t\tElapsed Time: %16.9f second, %ld miss in %ld acess, mr=%lf\t, tlb = %ld\t", etime - btime, values[1],values[0], (values[1]+0.0)/values[0], values[2]);
                 printf("correct\n");
 //#endif
             }else{

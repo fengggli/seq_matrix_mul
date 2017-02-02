@@ -1,14 +1,17 @@
 csci 590 HPC Lab 1
 Seq matrix multiplication
+by Feng Li, Jan 2017
 
-Verify results using libsci(is a vender-optimized implementation of blas)
+Comparison of six different version of sequential matrix multiplication. PAPI is used to analyze the performance.
 
-    man intro_blas3
-    man DGEMM
-    man intro_cblas
-Evaluate matrix multiplication use PAPI
+how to:
+    1. run Make to build the project
+    2. bigred.job is the sample batch file, which will generate all the temporary and summary results 
 
-create results dir
+see the source file for more details
+
+
+    
 
 
 

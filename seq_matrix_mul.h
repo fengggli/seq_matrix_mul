@@ -8,9 +8,9 @@
 #include <cblas.h>
 
 #include "papi_timer.h"
-#define NUM_EXP (3)
+#define NUM_EXP (2)
 
-#define NUM_EVENTS (2)
+#define NUM_EVENTS (3)
 
 
 //#define VERBOSE
